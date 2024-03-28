@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        DataBaseHelper dbhelper = new DataBaseHelper(this);
+      /*  DataBaseHelper dbhelper = new DataBaseHelper(this);
 
         clientmod client1 = new clientmod("Ahmad Mustafa",1111,"amustafa@hotmail.com", "ahmad1111");
         clientmod client2 = new clientmod("Nora Ali",1112,"nali@gmail.com", "ahmad1111");
@@ -62,6 +62,6 @@ public class MainActivity extends AppCompatActivity {
 
         dbhelper.addOrder(order1);
         dbhelper.addOrder(order2);
-        dbhelper.addOrder(order3);
+        dbhelper.addOrder(order3);*/
     }
 }
