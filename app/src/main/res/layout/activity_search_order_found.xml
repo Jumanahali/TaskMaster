@@ -95,7 +95,7 @@
                     android:src="@drawable/washbasins" />
 
                 <ImageView
-                    android:id="@id/timeicon"
+                    android:id="@id/locIcon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_alignParentEnd="true"
@@ -104,26 +104,25 @@
                     android:layout_below="@+id/staus"
                     android:layout_marginEnd="224dp"
                     android:layout_marginRight="70dp"
-                    android:src="@drawable/baseline_access_time_filled_24" />
+                    android:src="@drawable/baseline_add_location_alt_24" />
 
 
 
-                <TextClock
-                    android:id="@+id/textClock"
+                <EditText
+                    android:id="@+id/loc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/staus"
-                    android:layout_marginStart="33dp"
+                    android:layout_above="@+id/WorkerInfo"
+                    android:layout_marginStart="42dp"
                     android:layout_toEndOf="@+id/Subcategory1image"
                     android:fontFamily="@font/poppins_semibold"
                     android:textColor="@color/black"
-                    android:textSize="14sp"
-                    tools:layout_editor_absoluteX="79dp"
-                    tools:layout_editor_absoluteY="376dp" />
+                    android:textSize="21sp"
+                    android:text="KSU"/>
 
 
                 <ImageView
-                    android:id="@id/LocIcon"
+                    android:id="@id/timeicon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_alignParentEnd="true"
@@ -132,19 +131,19 @@
                     android:layout_below="@+id/staus"
                     android:layout_marginEnd="60dp"
                     android:layout_marginRight="70dp"
-                    android:src="@drawable/baseline_add_location_alt_24" />
+                    android:src="@drawable/baseline_access_time_filled_24" />
 
-                <TextView
-                    android:id="@+id/loc"
+                <EditText
+                    android:id="@+id/textClock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/staus"
-                    android:layout_marginStart="210dp"
+                    android:layout_above="@+id/amount"
+                    android:layout_marginStart="205dp"
                     android:layout_toEndOf="@+id/Subcategory1image"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="KSU"
+                    android:text="3:00"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="21sp" />
 
                 <ImageView
                     android:id="@id/workericon"

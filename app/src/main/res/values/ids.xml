@@ -9,4 +9,5 @@
     <item name="workericon2" type="id" />
     <item name="amounticon2" type="id" />
     <item name="main" type="id" />
+    <item name="locicon" type="id" />
 </resources>
