@@ -43,8 +43,20 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(createTableStatement);
         String createTable2Statement = "Create TABLE " + SERVICE_TABLE + " (" + COLUMN_SERVICE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_CATEGORY_NAME + " TEXT, " + COLUMN_SUBCATEGORY_NAME + " TEXT, "+ COLUMN_PRICE + " INTEGER, " + COLUMN_DESCRIPTION + " TEXT )";
         sqLiteDatabase.execSQL(createTable2Statement);
-        String createTable3Statement = "Create TABLE " + ORDER_TABLE + " (" + COLUMN_ORDER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_SERVICE_ID +"INTEGER, FOREIGN KEY ('SERVICE_ID') REFERENCES "+ SERVICE_TABLE +"('SERVICE_ID'), " + COLUMN_CLIENT_ID +"INTEGER, FOREIGN KEY ('CLIENT_ID') REFERENCES "+ CLIENT_TABLE +"('CLIENT_ID'), "+ COLUMN_LOCATION + " TEXT, " + COLUMN_RATE + " INTEGER, " + COLUMN_TIME + " TEXT, "+ COLUMN_WORKER_NAME + " TEXT, "+ COLUMN_WORKER_PHONE + " TEXT, "+ COLUMN_ORDER_STATUS + " TEXT )";
-        sqLiteDatabase.execSQL(createTableStatement);
+        String createTable3Statement = "CREATE TABLE " + ORDER_TABLE + " (" +
+                COLUMN_ORDER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_SERVICE_ID + " INTEGER, " +
+                COLUMN_CLIENT_ID + " INTEGER, " +
+                COLUMN_LOCATION + " TEXT, " +
+                COLUMN_RATE + " INTEGER, " +
+                COLUMN_TIME + " TEXT, " +
+                COLUMN_WORKER_NAME + " TEXT, " +
+                COLUMN_WORKER_PHONE + " TEXT, " +
+                COLUMN_ORDER_STATUS + " TEXT, "+
+                "FOREIGN KEY (" + COLUMN_CLIENT_ID + ") REFERENCES " + CLIENT_TABLE + " ('CLIENT_ID'), " +
+                "FOREIGN KEY (" + COLUMN_SERVICE_ID + ") REFERENCES " + SERVICE_TABLE + " ('SERVICE_ID')) "
+                ;
+        sqLiteDatabase.execSQL(createTable3Statement);
     }
 
     @Override
