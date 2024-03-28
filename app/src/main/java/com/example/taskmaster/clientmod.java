@@ -4,6 +4,7 @@ public class clientmod {
     private String cName;
     private int clientID;
     private String email;
+    //we choose email to be a unique communication method for client
     private String password;
 
     public clientmod(String name, int id, String email, String password) {
